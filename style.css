@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&family=Varela+Round&display=swap');
+
+body{
+    background-color: cadetblue;
+    
+    height: 200vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 10vh;
+    color: gold;
+    background-color: black; /* to see changes in height width*/
+}
+nav ul li{
+    padding: 0px 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;/* to align spotify to center */
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img{
+    height: 8vh;
+    padding: 0 8px ;
+}
+
+.container{
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    width: 70%;
+    height: 64vh;
+    display: flex;
+    margin: 10px auto;
+    border-radius: 12px;
+    padding: 23px;
+    background: url(bg.jpg) center center/cover;
+}
+
+.songItemContainer{
+    margin-top: 20px;
+}
+
+.songItem{
+    background-color: white;
+    height: 8vh;
+    width: 70%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+
+.songItem img{
+    height: 5vh;
+    margin: 0px 23px;
+    border-radius: 30px;
+}
+
+.songlistplay{
+    display: flex;
+    width: 30%;
+    margin: 0px 20px ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.songlistplay i{
+    cursor: pointer;
+}
+
+.bottom{
+    position: sticky;
+    top: 85vh;
+    background-color: black;
+    color: gold;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+
+}
+.bottom .icons{
+    margin-top: 15px ;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left:10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+#gif{
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
